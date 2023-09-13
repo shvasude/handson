@@ -1,0 +1,32 @@
+import java.util.*;
+public class HashmapExample {
+
+  public static void main(String[] args) {
+    List<Integer> ar = Arrays.asList(10, 20, 30, 10, 40, 20, 50, 10, 20, 10);    
+    int n = 9;
+    int result = sockMerchant(n, ar);
+    System.out.println("Total pairs: " + result); 
+  }
+  
+  public static int sockMerchant(int n, List<Integer> ar){
+  	Map<Integer, Integer> sockCount = new HashMap<>();
+    // Write your code here
+    for (Integer sock : ar) {
+            sockCount.put(sock, sockCount.getOrDefault(sock, 0)+1);
+            //System.out.println("sock-" + sock + " and the sockCount is " + sockCount);
+            
+    }
+    
+    int pairCount = 0;
+   
+    for (int count : sockCount.values()) {
+    	System.out.println(" sock count - " + sockCount.values());
+        pairCount += count / 2;
+        System.out.println("pair count - " + count / 2);
+        
+    }
+    
+    return pairCount;
+  }
+  
+}
