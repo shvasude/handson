@@ -1,0 +1,27 @@
+class Animal {
+    String sound = "Some sound";
+
+    void makeSound() {
+        System.out.println(sound);
+    }
+}
+
+class Dog extends Animal {
+    String sound = "Bark";
+
+    void makeSound() {
+        System.out.println("Dog: " + sound);
+    }
+
+    void animalSound() {
+        super.makeSound(); // Calls the makeSound method of the superclass (Animal)
+    }
+}
+
+public class SuperKeywordExample {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.makeSound();      // Calls the makeSound method of the Dog class
+        myDog.animalSound();    // Calls the makeSound method of the superclass (Animal) using super
+    }
+}

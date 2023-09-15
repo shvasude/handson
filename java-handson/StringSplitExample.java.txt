@@ -1,0 +1,14 @@
+public class StringSplitExample {
+    public static void main(String[] args) {
+        String input = "apple,banana,cherry";
+        char delimiter = ','; // The character to split by
+
+        // Split the string by the delimiter
+        String[] parts = input.split(String.valueOf(delimiter));
+
+        // Print the resulting substrings
+        for (String part : parts) {
+            System.out.println(part);
+        }
+    }
+}

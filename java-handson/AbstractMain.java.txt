@@ -1,0 +1,49 @@
+abstract class Shape {
+	public abstract double getArea();
+    
+    public void display() {
+    	System.out.println("This is an abstract class example");
+    }
+}
+
+class Circle extends Shape {
+  private double radius;
+
+  Circle(double radius) {
+    this.radius = radius;
+  }
+	@Override
+  public double getArea() {
+    return Math.PI * radius * radius;
+  }
+}
+    
+class Rectangle extends Shape {
+  private double length;
+  private double width;
+
+  Rectangle(double length, double width) {
+    this.length = length;
+    this.width = width;
+  }
+	
+    @Override
+  public double getArea() {
+    return length * width;
+  }
+
+}
+    
+public class AbstractMain {
+	public static void main(String[] args) {
+    	Shape circle = new Circle(5);
+        System.out.println("Shape of a circle is " + circle.getArea());
+        circle.display();
+                
+    	Shape rectangle = new Rectangle(4,8);
+        System.out.println("Shape of a rectangle is " + rectangle.getArea());
+    
+    }
+
+
+}
