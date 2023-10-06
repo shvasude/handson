@@ -1,0 +1,43 @@
+1. reverse the words from 'sky is blue' to 'blue is sky'
+2. find duplicates 'in an array
+3. serializing 'and deserializing 
+4. Pagination
+5. Tool tip
+6. Hovering - use actions 'class and moveToElements
+   mouse actions - moveToElement(), clickAndHold(), release(), perform(), dragAndDrop()
+   scroll actions- JavaScript cmds - window.scrollTo(), scrollIntoView()
+7. implicit 
+    explicit waits - eleToBeClickable(), visibilityOfEleLocated, titleContains 
+    //can be used to identify dynamic ele or broken or invalid locators or sync issues
+    fluent waits
+8. Drop downs - Select, SelectByValue, SelectByVisibleText, SelectByIndex
+   handle pop ups - use getWindowHandles() 'and use driver.switchTo.window()
+9. get() - navigate to a URL
+10. navigate() - forward(), back(), refresh()
+11. find num of elements matching locator - findElements().size()
+12. Alerts - accepts(), dismiss(), getText(), sendKeys() //use these in try catch block
+13. browser cookies - addCookie, getCookie
+14. open a new tab - driver.switchTo.window()
+15. double click() 'and right click - contextClick()
+16. close() - close current browser window
+17. quit() - quit the entire webdriver session. clossing all windows
+18. Sync issues - WebDriverWait, elementToBeClickable(), visibilityOfElementLocated() , 
+                - invisibilityOfElementLocated() - 'for Spinner
+  - handle dynamic elements - 'partial locators, xpath with dynamic attr, webdriverwait , contains()
+19. findEle() returns 'noSuchEleException' 'when ele is ''not found
+20. findElements() returns emplty list 'when no elements are found
+21. checkbox 'and radiobutton - click()
+22. 
+23. handle staleelementfound - exception 'when ele is no longer attached to DOM (use try-catch)
+24. Desired cap - set browser properties, platform version 'when initiating the webdriver session
+25. file uploads - use sendKeys() on the file 'input ele
+26. TestNG - exec test cases 'in parallel - 'parallel=tests' or 'parallel=classes 'in TestNG XML
+27. Relative XPATH - //input[@id='username']
+28. Absolute XPATH - /html/body/div[1]/form/'input[2]
+29. Frames
+30. Polymorphism example 'in selenium - link.click() - here .click() can have different click operation based on type of a webelement
+31. Exceptions - webdriver excep, noSuchEle, timeoutExcep
+32. ChromeOptions options = new ChromeOptions(); 
+    options.addArguments("--headless"); 
+
+
